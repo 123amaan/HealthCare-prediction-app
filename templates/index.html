@@ -1,0 +1,171 @@
+<html>
+<body>
+    <div class="login">
+       <h1>HealthCare Prediction</h1>
+   
+       <form method="post">
+        <div class="mb-3">
+            <label class="form-label">Gender</label>
+            <select class="form-control" name="gender" placeholder="gender" required>
+                <option class="placeholder" selected disabled value="">Select your Gender</option>
+                <option value="male">
+                    Male
+                </option>
+                <option value="female">
+                    Female
+                </option>
+            </select>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Self Employed</label>
+            <select class="form-control" name="self_employed" placeholder="self_employed" required>
+                <option class="placeholder" selected disabled value="">self_employed</option>
+                <option value="Yes">
+                    Yes
+                </option>
+                <option value="No">
+                    No
+                </option>
+            </select>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">family_history</label>
+            <select class="form-control" name="family_history"
+                placeholder="family_history" required>
+                <option class="placeholder" selected disabled value="">family_history</option>
+                <option value="Yes">
+                    Yes
+                </option>
+                <option value="No">
+                    No
+                </option>
+               
+                
+            </select>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">work_interfere</label>
+            <select class="form-control" name="work_interfere" placeholder="work_interfere"
+                required>
+                <option class="placeholder" selected disabled value="">work_interfere</option>
+                <option value="Sometimes">
+                    Sometimes
+                </option>
+                <option value="Never">
+                    Never
+                </option>
+                <option value="Rarely">
+                    Rarely
+                </option>
+                <option value="Often">
+                    Often
+                </option>
+            </select>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label"><div class="mb-3">
+            <label class="form-label">remote_work</label>
+            <select class="form-control" name="remote_work" placeholder="remote_work"
+                required>
+                <option class="placeholder" selected disabled value="">remote_work</option>
+                <option value="Yes">
+                    Yes
+                </option>
+                <option value="No">
+                    No
+                </option>
+            </select>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label"><div class="mb-3">
+            <label class="form-label">benefits</label>
+            <select class="form-control" name="benefits" placeholder="benefits"
+                required>
+                <option class="placeholder" selected disabled value="">benefits</option>
+                <option value="Yes">
+                    Yes
+                </option>
+                <option value="No">
+                    No
+                </option>
+
+                <option value="Dont Know">
+                    Dont Know
+                </option>
+            </select>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label"><div class="mb-3">
+            <label class="form-label">anonymity</label>
+            <select class="form-control" name="anonymity" placeholder="anonymity"
+                required>
+                <option class="placeholder" selected disabled value="">anonymity</option>
+                <option value="Yes">
+                    Yes
+                </option>
+                <option value="No">
+                    No
+                </option>
+
+                <option value="Dont Know">
+                    Dont Know
+                </option>
+            </select>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label"><div class="mb-3">
+            <label class="form-label">mental_health</label>
+            <select class="form-control" name="mental_health" placeholder="mental_health"
+                required>
+                <option class="placeholder" selected disabled value="">mental_health</option>
+                <option value="Yes">
+                    Yes
+                </option>
+                <option value="No">
+                    No
+                </option>
+
+                <option value="MAybe">
+                    Maybe
+                </option>
+            </select>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label"><div class="mb-3">
+            <label class="form-label">phys_health</label>
+            <select class="form-control" name="phys_health" placeholder="phys_health"
+                required>
+                <option class="placeholder" selected disabled value="">phys_health</option>
+                <option value="Yes">
+                    Yes
+                </option>
+                <option value="No">
+                    No
+                </option>
+
+                <option value="MAybe">
+                    Maybe
+                </option>
+            </select>
+        </div>
+
+        <div class="mb-3">
+            <input class="btn btn-primary" type="submit" value="Predict" required />
+        </div>
+        <div class="input">
+            <h4>*Take values as : Male,No,No,Often,Yes,Yes,Dont Know, Maybe,Yes for better experience*</h4>
+        </div>
+
+    </form>
+    <h2>
+       The  prediction is {{prediction}} {{ prediction_text }}
+    </h2>
+   <body>
+</html>
